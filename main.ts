@@ -13,10 +13,20 @@ radio.onReceivedNumber(function (receivedNumber) {
                 } else {
                     if (receivedNumber == 4) {
                         maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 50)
+                    } else {
+                        if (receivedNumber == 8) {
+                            maqueen.servoRun(maqueen.Servos.S2, 100)
+                        } else {
+                            if (receivedNumber == 9) {
+                                maqueen.servoRun(maqueen.Servos.S1, 0)
+                            }
+                        }
                     }
                 }
             }
         }
     }
 })
-radio.setGroup(255)
+radio.setGroup(132)
+maqueen.motorStop(maqueen.Motors.All)
+maqueen.servoRun(maqueen.Servos.S2, 0)
