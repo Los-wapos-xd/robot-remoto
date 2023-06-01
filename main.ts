@@ -18,7 +18,7 @@ radio.onReceivedNumber(function (receivedNumber) {
                             maqueen.servoRun(maqueen.Servos.S2, 100)
                         } else {
                             if (receivedNumber == 9) {
-                                maqueen.servoRun(maqueen.Servos.S1, 0)
+                                maqueen.servoRun(maqueen.Servos.S2, 0)
                             }
                         }
                     }

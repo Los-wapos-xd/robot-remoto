@@ -1,5 +1,5 @@
 {
-    "name": "robot remoto",
+    "name": "Robot remoto",
     "description": "",
     "dependencies": {
         "core": "*",
